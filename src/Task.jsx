@@ -1,10 +1,11 @@
 const Task = ({ task }) => {
   return (
     <li className="task">
-      <p>
-        <b>{task.id})</b>
-        {task.name}
-      </p>
+      <p>{task.name}</p>
+      <div className="buttons">
+        <button>❌</button>
+        <button>✅</button>
+      </div>
     </li>
   );
 };

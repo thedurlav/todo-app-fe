@@ -5,6 +5,7 @@ const TaskAdder = ({ onAddTask }) => {
   function addNewTask(e) {
     e.preventDefault();
     onAddTask({ name });
+    setName("");
   }
 
   return (

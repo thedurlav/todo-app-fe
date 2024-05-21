@@ -22,6 +22,7 @@ function App() {
       );
       let data = await response.data;
       setTasks((prevTasks) => [...prevTasks, data]);
+      alert("New Task Added");
     } catch (error) {
       console.log(error);
     }
@@ -29,6 +30,7 @@ function App() {
 
   return (
     <div className="App">
+      <h2>My ToDo List 📕</h2>
       <TaskAdder onAddTask={handleAddTask} />
       <TaskList tasks={tasks} setTasks={setTasks} />
     </div>

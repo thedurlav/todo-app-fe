@@ -6,10 +6,10 @@ const TaskList = ({ tasks, setTasks, onDeleteTask, onUpdateTask }) => {
   useEffect(() => {
     async function fetchTask() {
       try {
-        let response = await axios.get("http://localhost:8080/todo/list");
-        // let response = await axios.get(
-        //   "https://todoapp-production-11b7.up.railway.app/todo/list"
-        // );
+        // let response = await axios.get("http://localhost:8080/todo/list");
+        let response = await axios.get(
+          "https://todoapp-production-11b7.up.railway.app/todo/list"
+        );
         let data = response.data;
         setTasks(data);
       } catch (error) {

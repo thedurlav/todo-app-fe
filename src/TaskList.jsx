@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import Task from "./Task";
 import axios from "axios";
 
@@ -19,7 +19,7 @@ const TaskList = ({ tasks, setTasks }) => {
       }
     }
     fetchTask();
-  }, []);
+  }, [setTasks]);
   return (
     <ul className="task-list">
       {tasks.map((task) => (

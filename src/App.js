@@ -1,6 +1,5 @@
 import { useState } from "react";
 import "./App.css";
-import Task from "./Task";
 import TaskAdder from "./TaskAdder";
 import TaskList from "./TaskList";
 import axios from "axios";

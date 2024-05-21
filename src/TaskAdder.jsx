@@ -4,7 +4,7 @@ const TaskAdder = ({ onAddTask }) => {
   const [name, setName] = useState("");
   function addNewTask(e) {
     e.preventDefault();
-    onAddTask({ name });
+    onAddTask({ name, completed: false });
     setName("");
   }
 

@@ -4,7 +4,7 @@
 
   width: 500px;
   justify-items: center;
-  margin: auto;
+  margin: 20px auto;
   background-color: #ffa62f;
   border: black solid 2px;
 }
@@ -44,6 +44,7 @@
   overflow-y: scroll;
   background-color: #ffa62f;
   height: 300px;
+  scrollbar-color: #ffa62f #ffc96f;
 }
 .task {
   margin: 5px 15px 5px 15px;
@@ -85,4 +86,8 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+.completed {
+  text-decoration: line-through;
+  font-style: italic;
 }
